@@ -34,8 +34,37 @@
   &-bold {
     color: @bold;
   }
-
   &-card {
     background-color: rgba(0, 0, 0, 0.62);
+   &-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0 1rem 0;
+  }
+    &_item {
+      display: flex;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.85);
+      &-icon {
+        position: absolute;
+        left: -20%;
+        & img {
+          width: 5rem;
+        }
+      }
+      &-text {
+        width: 11.25rem;
+        height: 5rem;
+        padding: 0 0.2rem 0 3rem ;
+        margin: 0;
+        font-size: 0.675rem;
+        font-family: Arial;
+        color: #515151;
+        &-comment {
+          font-style: italic;
+        }
+      }
+    }
   }
 }

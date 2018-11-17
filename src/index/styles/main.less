@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+
+  &-left {
+    margin-top: 2rem;
+    width: 20%;
+    &-author {
+      & h2 {
+        font-family: @fontTitle;
+        color: @titleText;
+        font-size: 1.375rem;
+      }
+      & p {
+        font-family: Arial;
+        font-size: 0.75rem;
+        line-height: 1.5;
+        & .bold {
+          color: @titleText;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

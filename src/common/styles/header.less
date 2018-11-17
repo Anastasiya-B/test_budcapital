@@ -1,0 +1,64 @@
+.header {
+  &-logotype {
+    display: flex;
+    /*  justify-content: flex-end;*/
+    justify-content: space-between;
+    box-sizing: border-box;
+    .logo {
+      padding-top: 0.5rem;
+      text-transform: uppercase;
+      &-text {
+        font-family: "Leaguegothic Regular";
+        font-size: 2rem;
+        color: #076e9f;
+      }
+      &-bold {
+        color: #22aaec;
+      }
+    }
+    .social-icon {
+      padding-top: 1rem;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  &-navbar {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 0.625rem;
+    &_items {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    &_item {
+      padding:  0.3rem 1.5rem 0.3rem 1.5rem ;
+      text-align: center;
+      margin: 0.4rem;
+      font-weight: bold;
+      border: 2px solid white;
+      border-radius: 2px;
+      &:hover {
+        background-color: #076e9f;
+        border: 2px solid #045279;
+        border-radius: 2px;
+        & a {
+          color: white;
+        }
+      }
+      &:nth-child(1) {
+              background-color: #076e9f;
+        border: 2px solid #045279;
+        border-radius: 2px;
+        & a {
+          color: white;
+        }
+      }
+      & a {
+        color: #707070;
+      }
+    }
+  }
+}

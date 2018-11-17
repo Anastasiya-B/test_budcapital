@@ -1,26 +1,37 @@
 .header {
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
   &-logotype {
+    position: relative;
     display: flex;
-    /*  justify-content: flex-end;*/
-    justify-content: space-between;
+    justify-content: flex-end;
     box-sizing: border-box;
     .logo {
       padding-top: 0.5rem;
+      padding-left: 2rem;
       text-transform: uppercase;
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
       &-text {
-        font-family: "Leaguegothic Regular";
+        font-family: @fontTitle;
         font-size: 2rem;
-        color: #076e9f;
+        color: @titleText;
       }
       &-bold {
-        color: #22aaec;
+        color: @bold;
       }
     }
     .social-icon {
       padding-top: 1rem;
+      margin: 0 1rem;
       img {
         width: 16px;
         height: 16px;
+        margin: 0 0.1rem;
+        &:hover {
+          background: @bold;
+        }
       }
     }
   }
@@ -41,7 +52,7 @@
       border: 2px solid white;
       border-radius: 2px;
       &:hover {
-        background-color: #076e9f;
+        background-color: @titleText;
         border: 2px solid #045279;
         border-radius: 2px;
         & a {

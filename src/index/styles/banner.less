@@ -1,0 +1,41 @@
+.banner {
+  border-top: 3px solid @bold;
+  border-bottom: 3px solid @bold;
+  background: url("../../../assets/images/main-img.png") no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-top: 5rem;
+  & .banner-title, .banner-text {
+    margin: 0 auto;
+    font-family: @fontTitle;
+    text-transform: uppercase;
+    color: @titleText;
+    background-color: rgba(255, 255, 255, 0.65);
+    text-align: center;
+  }
+  &-title {
+    width: 285px;
+    margin-top: 1rem;
+    & h1 {
+      padding: 0.3rem 0;
+      font-size: 3.75rem;
+      font-weight: 400;
+    }
+  }
+  &-text {
+    width: 780px;
+    margin-top: 1.5rem !important;
+    & h2 {
+      padding: 0.3rem 0;
+      font-size: 1.875rem;
+      font-weight: 400;
+    }
+  }
+  &-bold {
+    color: @bold;
+  }
+
+  &-card {
+    background-color: rgba(0, 0, 0, 0.62);
+  }
+}
